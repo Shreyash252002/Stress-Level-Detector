@@ -51,3 +51,10 @@ def predict(X, y, features):
     prediction = model.predict(np.array(features).reshape(1, -1))
 
     return prediction, score
+def predict(X, y, features):
+    # Get model and model score
+    model, score = train_model(X, y)
+    # Predict the value
+    prediction = model.predict(np.array(features).reshape(1, -1))
+
+    return prediction, score
