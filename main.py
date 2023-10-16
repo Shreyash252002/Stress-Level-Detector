@@ -43,3 +43,12 @@ elif (page == "Data Info"):
     Tabs[page].app(df)
 else:
     Tabs[page].app()
+
+# Call the app funciton of selected page to run
+if page in ["Prediction", "Visualisation"]:
+    Tabs[page].app(df, X, y)
+elif (page == "Data Info"):
+    Tabs[page].app(df)
+else:
+    Tabs[page].app()
+
